@@ -7,6 +7,9 @@ jobs:
   steps:
     - checkout
     - run:
+        name: echo
+        command: `echo hello world`
+    - run:
         name: make
         command: 'make'
 
