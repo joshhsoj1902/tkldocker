@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: echo
-          command: 'echo hello world'
+          name: setup tkldev
+          command: 'tkldev-setup'
       - run:
           name: make
           command: 'make'
