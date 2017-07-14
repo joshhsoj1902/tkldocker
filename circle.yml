@@ -9,3 +9,9 @@ jobs:
     - run:
         name: make
         command: 'make'
+
+workflows:
+  version: 2
+    build_it_all:
+      jobs:
+        - build
