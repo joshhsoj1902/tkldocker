@@ -8,7 +8,7 @@ jobs:
     - checkout
     - run:
         name: echo
-        command: `echo hello world`
+        command: 'echo hello world'
     - run:
         name: make
         command: 'make'
