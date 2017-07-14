@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/docker
+    working_directory: /turnkey/fab/products/docker
     docker:
       - image: turnkeylinux/tkldev-14.1:latest
     steps:
