@@ -1,0 +1,7 @@
+#include <turnkey/base>
+
+apt-transport-http
+ca-certificates
+curl
+gnupg2
+software-properties-common

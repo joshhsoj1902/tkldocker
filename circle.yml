@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/docker
+    docker:
+      - image: turnkeylinux/tkldev-14.1
+  steps:
+    - checkout
+    - run:
+        name: make
+        command: 'make'
