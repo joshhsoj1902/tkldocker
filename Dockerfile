@@ -22,4 +22,4 @@ RUN ls -ltr /turnkey/fab/common
 RUN ls -ltr /turnkey/fab/common/mk
 
 
-RUN make
+RUN cd ../core && make
