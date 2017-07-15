@@ -17,6 +17,7 @@ RUN ls -ltr ../../
 
 RUN ls -ltr /turnkey
 RUN ls -ltr /turnkey/fab
+RUN ls -ltr /turnkey/fab/products
 RUN ls -ltr /turnkey/fab/common
 RUN ls -ltr /turnkey/fab/common/mk
 
