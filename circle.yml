@@ -8,10 +8,10 @@ jobs:
       - checkout
       - run:
           name: setup tkldev
-          command: 'sudo tkldev-setup'
+          command: 'tkldev-setup'
       - run:
           name: make
-          command: 'sudo make'
+          command: 'make'
 
 workflows:
   version: 2
