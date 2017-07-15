@@ -5,6 +5,8 @@ WORKDIR /turnkey/fab/products/docker
 
 COPY . ./
 
+ENV FAB_PATH /turnkey/fab
+
 RUN tkldev-setup
 
 RUN ls -ltr
