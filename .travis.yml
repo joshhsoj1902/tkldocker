@@ -4,4 +4,5 @@ services:
   - docker
 
 before_install:
-  - docker build -t carlad/sinatra .
+  - docker info
+  - docker build -t joshhsoj1902/tkldev .
