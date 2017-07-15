@@ -6,6 +6,9 @@ WORKDIR /turnkey/fab/products/docker
 COPY . ./
 
 ENV FAB_PATH /turnkey/fab
+ENV POLIPO_PORT 8124
+ENV FAB_APT_PROXY http://127.0.0.1:8124
+ENV FAB_HTTP_PROXY http://127.0.0.1:8124
 
 RUN tkldev-setup
 
