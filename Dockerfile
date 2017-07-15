@@ -7,4 +7,10 @@ COPY . ./
 
 RUN tkldev-setup
 
+RUN ls -ltr
+
+RUN ls -ltr ../
+
+RUN ls -ltr ../../
+
 RUN make
