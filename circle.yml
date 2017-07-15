@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ./turnkey-docker
+    working_directory: ~/turnkey-docker
     machine: true
     steps:
       - checkout
