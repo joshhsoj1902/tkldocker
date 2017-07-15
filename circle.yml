@@ -2,16 +2,12 @@ version: 2
 jobs:
   build:
     working_directory: /turnkey/fab/products/docker
-    docker:
-      - image: turnkeylinux/tkldev-14.1:latest
+    machine: true
     steps:
       - checkout
       - run:
-          name: setup tkldev
-          command: 'tkldev-setup'
-      - run:
-          name: make
-          command: 'make'
+          name: build docker image
+          command: 'docker build -t joshhsoj1902/tkldev .'
 
 workflows:
   version: 2
