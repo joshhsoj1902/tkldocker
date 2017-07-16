@@ -6,6 +6,13 @@ jobs:
     steps:
       - checkout
       - run:
+          name: change driver
+          command: |
+            sudo service docker stop
+            sudo cp -au /var/lib/docker /var/lib/docker.bk
+            sudo echo '{"storage-driver": "overlay2"}' >> /etc/docker/daemon.json
+            sudo service docker start
+      - run:
           name: docker info
           command: docker info
       - run:
