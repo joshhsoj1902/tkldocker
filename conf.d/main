@@ -1,12 +1,13 @@
 #!/bin/sh -ex
 
-#ensure datafiles (eg. innodb) are created
-/etc/init.d/mysql start
-/etc/init.d/mysql stop
+curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 
-# enable cgi
-a2enmod cgi
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
 
-# remove unrequired webcp icons (all except those named) 
-cd /var/www/images
-find . -type f ! -name "adminer.png" ! -name "shell.png" ! -name "tab.png" ! -name "webmin.png" -delete
+apt-get update
+
+apt-get install -y docker-ce=17.06.0~ce-0~debian
+
