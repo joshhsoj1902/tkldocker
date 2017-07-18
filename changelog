@@ -1,3 +1,5 @@
-turnkey-docker-0.0.1; urgency=low
+turnkey-docker-0.0.1 turnkey; urgency=low
 
-	* Started the project
+  * Started it all.
+
+ -- Josh Bryans <jeremy@turnkeylinux.org>  Mon, 17 Jul 2017 12:41:10 +1100
