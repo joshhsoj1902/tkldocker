@@ -10,3 +10,6 @@ add-apt-repository \
 apt-get update
 
 apt-get install -y docker-ce=17.06.0~ce-0~debian
+
+curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
